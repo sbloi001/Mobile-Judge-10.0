@@ -63,4 +63,3 @@ Ext.define('MobileJudge.view.charts.Grades', {
         }
     ]
 });
-

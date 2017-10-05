@@ -6,14 +6,13 @@ Ext.define('MobileJudge.view.students.Home', {
 		'Ext.ux.layout.ResponsiveColumn'
 	],
 
+    controller: 'student',
+    viewModel: {
+        data: {
+        }
+    },
 	layout: 'responsivecolumn',
 	cls: 'userProfile-container',
-
-	controller: 'student',
-	viewModel: {
-		data: {
-		}
-	},
 
 	items: [
 		{

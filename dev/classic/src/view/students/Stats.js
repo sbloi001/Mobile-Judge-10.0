@@ -1,6 +1,6 @@
-Ext.define('MobileJudge.view.charts.Stats', {
+Ext.define('MobileJudge.view.students.Stats', {
     extend: 'Ext.container.Container',
-    xtype: 'stats',
+    xtype: 'studentstats',
 
     requires: [
         'Ext.ux.layout.ResponsiveColumn'
@@ -26,11 +26,6 @@ Ext.define('MobileJudge.view.charts.Stats', {
         {
             xtype:'livegrades',
             height: 400,
-            userCls: 'big-100 small-100'
-        },
-        {
-            xtype:'livegrades',
-            height: 200,
             userCls: 'big-100 small-100'
         }
     ]
