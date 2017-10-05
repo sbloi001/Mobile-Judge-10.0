@@ -1,9 +1,8 @@
 var forbidden = require('restify').errors.ForbiddenError,
 	notFound = require('restify').errors.NotFoundError,
-	Promise = require('bluebird'),
+	Promise = require('bluebird')
 
-
-    module.exports = function(server, db) {
+module.exports = function(server, db) {
 
 	server.get(apiPrefix + '/grades/students', function (req, res, next) {
 		if (!req.user || req.user.role !== 2) return next(new notFound('You don\'t have any students to grade'));
