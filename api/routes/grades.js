@@ -1,6 +1,6 @@
 var forbidden = require('restify').errors.ForbiddenError,
 	notFound = require('restify').errors.NotFoundError,
-    _ = require('lodash'),
+	_ = require('lodash'),
 	Promise = require('bluebird');
 
 module.exports = function(server, db) {
