@@ -6,7 +6,7 @@ Ext.define('MobileJudge.store.grade.Judges', {
 
     proxy: {
         type: 'api',
-        url: '/api/judges',
+        url: '/api/judges'
     },
 
     remoteSort: true,

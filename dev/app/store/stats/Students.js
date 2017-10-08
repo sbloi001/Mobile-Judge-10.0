@@ -10,7 +10,7 @@ Ext.define('MobileJudge.store.stats.Students', {
         { name: 'project',          type: 'string',  convert: null },
         { name: 'total',            type: 'int',     convert: null },
         { name: 'graded',           type: 'int',     convert: null },
-        { name: 'accepted',         type: 'int',     convert: null },
+        { name: 'accepted',         type: 'int',     convert: null }
     ],
     proxy: {
         type: 'api',

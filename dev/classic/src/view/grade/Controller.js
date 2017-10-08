@@ -73,7 +73,7 @@ Ext.define('MobileJudge.view.grade.Controller', {
                         if (student.judgeId == judge.id)
                             student.judgeName = judge.fullName;
                     })
-                })
+                });
                 data.students.forEach(function (student) {
                     var tempAverage = 1;
                     data.grades.forEach(function (grade) {
@@ -81,9 +81,9 @@ Ext.define('MobileJudge.view.grade.Controller', {
                             student.gradeAverage = student.gradeAverage + grade.grade;
                             tempAverage++;
                         }
-                    })
+                    });
                     student.gradeAverage = student.gradeAverage / tempAverage;
-                })
+                });
 
                 return data;
                 Ext.getStore('mockData').data = data.students;
@@ -109,9 +109,9 @@ Ext.define('MobileJudge.view.grade.Controller', {
                     student.data.grade = student.data.grade + grade.data.value;
                     counter++;
                 }
-            })
+            });
             student.data.grade = student.data.grade / counter;
-        })
+        });
         Ext.getStore("students").loadData(students, [false]);
     },
 
@@ -163,7 +163,7 @@ Ext.define('MobileJudge.view.grade.Controller', {
             if (obj.data.grade > 10 || obj.data.grade < 0)
                 outOfBounds = true;
             data.push(obj.data);
-        })
+        });
 
         if (outOfBounds) {
             me.loadThirdViewData(data[0]);

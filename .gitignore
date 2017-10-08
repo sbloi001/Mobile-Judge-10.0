@@ -9,3 +9,5 @@ yarn-error.log*
 node_modules/
 jspm_packages/
 oauthd/
+
+.idea/

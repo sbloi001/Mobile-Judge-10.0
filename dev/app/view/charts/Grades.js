@@ -30,7 +30,6 @@ Ext.define('MobileJudge.view.charts.Grades', {
                                 calloutLine: {
                                     length: 60,
                                     width: 3
-                                    // specifying 'color' is also possible here
                                 }
                             },
                             tooltip: {

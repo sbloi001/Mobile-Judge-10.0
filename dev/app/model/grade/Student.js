@@ -15,6 +15,6 @@ Ext.define('MobileJudge.model.grade.Student', {
         { name: 'grade',            type: 'float', convert: null },
         { name: 'rawGrade',         type: 'float', convert: null },
         { name: 'max',              type: 'int', convert: null },
-        { name: 'filterStatus',     type: 'string', convert: null },
+        { name: 'filterStatus',     type: 'string', convert: null }
     ]
 });
