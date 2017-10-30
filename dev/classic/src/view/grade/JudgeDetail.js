@@ -24,7 +24,7 @@ Ext.define('MobileJudge.view.grade.GradeJudgeDetailWizard', {
     cls: 'wizardone',
     layout: 'card',
     listeners: {
-        close: "updateMainStore"
+        close: "updateJudgeMainStore"
     },
 
     loadData: function(record) {
@@ -77,7 +77,7 @@ Ext.define('MobileJudge.view.grade.GradeJudgeDetailWizard', {
                 ]
             },
             {
-                id: 'detailAllButton',
+                id: 'detailAllJudgeButton',
                 xtype: 'image',
                 src: '/resources/images/icons/RedYellowGreen.ico',
                 width: 40,
